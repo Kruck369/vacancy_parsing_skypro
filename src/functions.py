@@ -15,7 +15,7 @@ def filter_vacancies(vacancies, filter_words):
 
     filtered_vacancies = []
     for vacancy in vacancies:
-        vacancy_info = f"{vacancy.title} {vacancy.requirements}"
+        vacancy_info = f"{vacancy.title} {vacancy.description}"
         if any(word.lower() in vacancy_info.lower() for word in filter_words):
             filtered_vacancies.append(vacancy)
     return filtered_vacancies
