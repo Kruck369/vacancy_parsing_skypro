@@ -8,6 +8,7 @@ packages = [{include = "vacancy_parsing_skypro"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+requests = "^2.30.0"
 
 
 [build-system]
